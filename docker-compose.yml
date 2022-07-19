@@ -1,0 +1,9 @@
+version: '3.4'
+
+services:
+  apache-parser:
+    build: .
+    ports:
+      - "8080:5000"
+    volumes:
+      - .:/usr/srv/app
